@@ -1,4 +1,4 @@
-import 'package:flutter/src/widgets/framework.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:watchmap/views/onboard_view.dart';
 
 class OnboardScreen extends StatefulWidget {
