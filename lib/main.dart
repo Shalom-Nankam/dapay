@@ -1,12 +1,15 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:get/get.dart';
 import 'package:watchmap/controller/onboard_controller.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await ScreenUtil.ensureScreenSize();
 
-  runApp(const MyApp());
+  runApp(const GetCupertinoApp(
+    home: MyApp(),
+  ));
 }
 
 class MyApp extends StatelessWidget {

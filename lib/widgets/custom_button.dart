@@ -7,20 +7,26 @@ class CustomButton extends StatelessWidget {
       required this.title,
       required this.radius,
       this.color,
-      required this.action});
+      required this.action,
+      required this.height,
+      required this.width});
   final Widget title;
-  final double radius;
+  final double radius, height, width;
   final Color? color;
   final VoidCallback action;
 
   @override
   Widget build(BuildContext context) {
-    return CupertinoButton(
-      onPressed: action,
-      color: color ?? const Color(0xffE8F54A),
-      padding: const EdgeInsets.all(0),
-      borderRadius: BorderRadius.circular(radius).r,
-      child: title,
+    return SizedBox(
+      height: height.h,
+      width: width.w,
+      child: CupertinoButton(
+        onPressed: action,
+        color: color ?? const Color(0xffE8F54A),
+        padding: const EdgeInsets.all(0),
+        borderRadius: BorderRadius.circular(radius).r,
+        child: title,
+      ),
     );
   }
 }
