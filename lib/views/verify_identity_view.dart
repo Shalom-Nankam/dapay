@@ -4,6 +4,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:watchmap/controller/verify_identitiy_controller.dart';
 import 'package:watchmap/views/stateless_view.dart';
+import 'package:watchmap/widgets/custom_button.dart';
 import 'package:watchmap/widgets/custom_text.dart';
 import 'package:watchmap/widgets/verify_step.dart';
 
@@ -82,6 +83,20 @@ class VerifyIdentityView
                     ),
                     title: 'Scan Card',
                     description: 'Scan Your Both Sides Of Your Bank Card'),
+                SizedBox(
+                  height: 130.h,
+                ),
+                CustomButton(
+                    title: const CustomText(
+                      text: 'NEXT',
+                      color: Color(0xff0d0d0d),
+                      size: 16,
+                      weight: FontWeight.w600,
+                    ),
+                    radius: 14,
+                    action: () {},
+                    height: 67,
+                    width: 344)
               ],
             ),
           )),

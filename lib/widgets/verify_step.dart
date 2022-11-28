@@ -22,13 +22,6 @@ class VerifyStep extends StatelessWidget {
           height: 39.h,
           width: 39.w,
           decoration: BoxDecoration(
-              boxShadow: const [
-                // BoxShadow(
-                //     color: const Color(0xff000000).withOpacity(0.05),
-                //     blurStyle: BlurStyle.inner,
-                //     blurRadius: 6,
-                //     offset: const Offset(3, 6))
-              ],
               color: const Color(0xffeff4f6),
               borderRadius: BorderRadius.circular(100).r),
           child: Center(child: icon),
