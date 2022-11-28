@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
       designSize: const Size(414, 896),
       minTextAdapt: true,
       builder: (context, child) => const CupertinoApp(
-        title: 'Cupertino App',
+        title: 'Da pay',
         home: OnboardScreen(),
         debugShowCheckedModeBanner: false,
       ),

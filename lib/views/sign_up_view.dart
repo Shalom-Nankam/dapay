@@ -1,7 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:get/get.dart';
 import 'package:watchmap/controller/sign_up_controller.dart';
+import 'package:watchmap/controller/verify_identitiy_controller.dart';
 import 'package:watchmap/widgets/custom_button.dart';
 import 'package:watchmap/widgets/custom_text.dart';
 import 'package:watchmap/widgets/custom_textfield.dart';
@@ -111,7 +113,7 @@ class SignUpView extends StatelessView<SignUpScreen, SignUpController> {
                     align: TextAlign.center,
                   ),
                   radius: 13,
-                  action: () {}),
+                  action: () => Get.to(() => const VerifyIdentityScreen())),
               SizedBox(
                 height: 21.h,
               ),

@@ -123,7 +123,7 @@ class OnboardView extends StatelessView<OnboardScreen, OnboardController> {
                         ],
                       ),
                       radius: 13,
-                      action: () => Get.off(const SignUpScreen()))
+                      action: () => Get.off(() => const SignUpScreen()))
                 ],
               )
             ],
