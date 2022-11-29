@@ -8,7 +8,12 @@ class DashboardView
     extends StatelessView<DashboardScreen, DashboardController> {
   DashboardView(DashboardController state, {Key? key}) : super(state, key: key);
 
-  final List<Widget> screens = [const HomeScreenTab()];
+  final List<Widget> screens = [
+    const HomeScreenTab(),
+    const HomeScreenTab(),
+    const HomeScreenTab(),
+    const HomeScreenTab(),
+  ];
 
   @override
   Widget build(BuildContext context) {

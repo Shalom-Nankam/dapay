@@ -12,7 +12,7 @@ class NotificationIcon extends StatelessWidget {
         Icon(
           CupertinoIcons.bell,
           color: const Color(0xff111827),
-          size: 21.w,
+          size: 24.w,
         ),
         Container(
           height: 9.h,
