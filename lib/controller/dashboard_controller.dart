@@ -1,5 +1,5 @@
-import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:watchmap/views/dashboard_view.dart';
 
 class DashboardScreen extends StatefulWidget {
   const DashboardScreen({super.key});
@@ -11,6 +11,6 @@ class DashboardScreen extends StatefulWidget {
 class DashboardController extends State<DashboardScreen> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return DashboardView(this);
   }
 }

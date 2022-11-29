@@ -14,6 +14,7 @@ class DashboardView
   Widget build(BuildContext context) {
     return CupertinoPageScaffold(
       child: CupertinoTabScaffold(
+          backgroundColor: Colors.white,
           tabBar: CupertinoTabBar(
               backgroundColor: Colors.white,
               activeColor: const Color(0xff090909),
